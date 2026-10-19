@@ -13,25 +13,28 @@
   body {
     width: 1200px;
     height: 630px;
-    background: #F3F1EC;
-    color: #141414;
+    background:
+      radial-gradient(820px 480px at 12% -10%, rgba(224,121,91,.12), transparent 62%),
+      #0E0D0B;
+    color: #F2EFE8;
     font-family: "Manrope", sans-serif;
-    padding: 56px 64px;
+    padding: 54px 64px 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
   }
   .topo { display: flex; justify-content: space-between; align-items: baseline; }
-  .marca { font-size: 16px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; }
-  .status { font-family: Consolas, monospace; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #6E6960; }
-  h1 { font-size: 92px; line-height: 1.02; font-weight: 400; letter-spacing: -.05em; max-width: 900px; }
-  .baixo { border-top: 1px solid #141414; padding-top: 20px; }
-  ul { list-style: none; display: flex; gap: 34px; }
-  li { display: flex; align-items: center; gap: 9px; font-size: 15px; font-weight: 500; letter-spacing: -.01em; }
-  .chip { width: 11px; height: 11px; border-radius: 2px; }
-  .marca-canto { position: absolute; width: 10px; height: 10px; border-top: 1px solid #C9C3B7; border-left: 1px solid #C9C3B7; top: 24px; left: 24px; }
-  .marca-canto.baixo { top: auto; left: auto; right: 24px; bottom: 24px; border: 0; border-right: 1px solid #C9C3B7; border-bottom: 1px solid #C9C3B7; }
+  .marca { font-size: 15px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; }
+  .status { font-family: Consolas, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #9A9283; }
+  h1 { font-size: 96px; line-height: .99; font-weight: 400; letter-spacing: -.052em; max-width: 880px; }
+  .baixo { border-top: 1px solid #3A342B; padding-top: 22px; }
+  ul { list-style: none; display: flex; gap: 38px; }
+  li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 500; letter-spacing: -.01em; }
+  .chip { width: 10px; height: 10px; border-radius: 2px; }
+  .marca-canto { position: absolute; width: 9px; height: 9px; border-top: 1px solid #4A4337; border-left: 1px solid #4A4337; top: 22px; left: 22px; }
+  .marca-canto.baixo { top: auto; left: auto; right: 22px; bottom: 22px; border: 0; border-right: 1px solid #4A4337; border-bottom: 1px solid #4A4337; }
 </style>
 </head>
 <body>
@@ -40,13 +43,11 @@
     <span class="marca">Charles Ideias Lab</span>
     <span class="status">Índice · 2026</span>
   </div>
-  <h1>Imagem, som<br>e código.</h1>
+  <h1>Memória em forma<br>de filme<span style="color:#E0795B">.</span></h1>
   <div class="baixo">
     <ul>
-      <li><span class="chip" style="background:#C25A3C"></span>Cicatriz Sonora</li>
-      <li><span class="chip" style="background:#3B6BE2"></span>BlackBox</li>
-      <li><span class="chip" style="background:#B98A2E"></span>Autoral Book</li>
-      <li><span class="chip" style="background:#8C877D"></span>Contato</li>
+      <li><span class="chip" style="background:#E0795B"></span>Cicatriz Sonora</li>
+      <li><span class="chip" style="background:#A79F91"></span>Contato</li>
     </ul>
   </div>
 </body>
