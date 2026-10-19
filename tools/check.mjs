@@ -21,12 +21,12 @@ const css = read("styles.css");
 
 check(html.includes('<html lang="pt-BR">'), "lang pt-BR");
 check(!/<script/i.test(html), "sem JavaScript");
-check(/<title>Charles Ideias Lab — memória em forma de filme<\/title>/.test(html), "title");
+check(/<title>Charles Ideias Lab — tudo o que faço mora aqui<\/title>/.test(html), "title");
 check(
-  /name="description" content="Cicatriz Sonora transforma acervo pessoal em filmes de memória\. Contato direto com Charles Ideias Lab\."/.test(html),
+  /name="description" content="Laboratório de imagem, som e código\. Projetos independentes, cada um com sua porta\."/.test(html),
   "description"
 );
-check(/name="theme-color" content="#0E0D0B"/.test(html), "theme-color");
+check(/name="theme-color" content="#0C0B09"/.test(html), "theme-color");
 
 const og = html.match(/property="og:image" content="([^"]+)"/);
 check(Boolean(og && og[1].startsWith("https://")), "og:image absoluto");
@@ -64,8 +64,8 @@ if (enforced.every((f) => existsSync(p(f)))) {
 
 check(css.includes("prefers-reduced-motion"), "respeita reduced motion");
 check(css.includes(":focus-visible"), "foco visível");
-check(/--bg:\s*#0E0D0B/.test(css), "token --bg");
-check(/--dim:\s*#9A9283/.test(css), "token --dim");
+check(/--bg:\s*#0C0B09/.test(css), "token --bg");
+check(/--dim:\s*#938B7C/.test(css), "token --dim");
 
 console.log(failures === 0 ? "\nTudo certo." : `\n${failures} falha(s).`);
 process.exit(failures === 0 ? 0 : 1);

@@ -14,40 +14,45 @@
     width: 1200px;
     height: 630px;
     background:
-      radial-gradient(820px 480px at 12% -10%, rgba(224,121,91,.12), transparent 62%),
-      #0E0D0B;
+      radial-gradient(820px 500px at 6% -10%, rgba(224,121,91,.12), transparent 62%),
+      #0C0B09;
     color: #F2EFE8;
     font-family: "Manrope", sans-serif;
-    padding: 54px 64px 48px;
+    padding: 52px 64px 46px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: relative;
     overflow: hidden;
   }
-  .topo { display: flex; justify-content: space-between; align-items: baseline; }
-  .marca { font-size: 15px; font-weight: 600; letter-spacing: .3em; text-transform: uppercase; }
-  .status { font-family: Consolas, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #9A9283; }
-  h1 { font-size: 96px; line-height: .99; font-weight: 400; letter-spacing: -.052em; max-width: 880px; }
-  .baixo { border-top: 1px solid #3A342B; padding-top: 22px; }
-  ul { list-style: none; display: flex; gap: 38px; }
+  .topo { display: flex; justify-content: space-between; align-items: center; }
+  .marca { font-size: 15px; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; }
+  .status { display: flex; align-items: center; gap: 9px; font-family: Consolas, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #938B7C; }
+  .pulso { width: 6px; height: 6px; border-radius: 50%; background: #E0795B; }
+  .olho { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; font-family: Consolas, monospace; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: #938B7C; }
+  .olho::before { content: ""; width: 30px; height: 1px; background: #E0795B; }
+  h1 { font-size: 104px; line-height: .97; font-weight: 400; letter-spacing: -.052em; max-width: 900px; }
+  .ponto { color: #E0795B; }
+  .baixo { border-top: 1px solid #3B352C; padding-top: 22px; }
+  ul { list-style: none; display: flex; gap: 40px; }
   li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 500; letter-spacing: -.01em; }
   .chip { width: 10px; height: 10px; border-radius: 2px; }
-  .marca-canto { position: absolute; width: 9px; height: 9px; border-top: 1px solid #4A4337; border-left: 1px solid #4A4337; top: 22px; left: 22px; }
-  .marca-canto.baixo { top: auto; left: auto; right: 22px; bottom: 22px; border: 0; border-right: 1px solid #4A4337; border-bottom: 1px solid #4A4337; }
+  .tag { margin-left: 6px; font-family: Consolas, monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #938B7C; }
 </style>
 </head>
 <body>
-  <span class="marca-canto"></span><span class="marca-canto baixo"></span>
   <div class="topo">
     <span class="marca">Charles Ideias Lab</span>
-    <span class="status">Índice · 2026</span>
+    <span class="status"><span class="pulso"></span>Laboratório ativo</span>
   </div>
-  <h1>Memória em forma<br>de filme<span style="color:#E0795B">.</span></h1>
+  <div>
+    <p class="olho">Imagem · Som · Código</p>
+    <h1>Tudo o que faço<br>mora aqui<span class="ponto">.</span></h1>
+  </div>
   <div class="baixo">
     <ul>
-      <li><span class="chip" style="background:#E0795B"></span>Cicatriz Sonora</li>
-      <li><span class="chip" style="background:#A79F91"></span>Contato</li>
+      <li><span class="chip" style="background:#E0795B"></span>Cicatriz Sonora <span class="tag">Filme</span></li>
+      <li><span class="chip" style="background:#A79F91"></span>Contato <span class="tag">Falar</span></li>
     </ul>
   </div>
 </body>
