@@ -4,56 +4,57 @@
 <meta charset="utf-8">
 <style>
   @font-face {
-    font-family: "Manrope";
-    src: url("../assets/manrope-latin-wght-normal.woff2") format("woff2");
-    font-weight: 200 800;
+    font-family: "Archivo";
+    src: url("../assets/archivo-latin.woff2") format("woff2");
+    font-weight: 300 700;
+    font-style: normal;
     font-display: block;
   }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     width: 1200px;
     height: 630px;
-    background:
-      radial-gradient(820px 500px at 6% -10%, rgba(224,121,91,.12), transparent 62%),
-      #0C0B09;
-    color: #F2EFE8;
-    font-family: "Manrope", sans-serif;
-    padding: 52px 64px 46px;
+    background: #050505;
+    color: #edeae3;
+    font-family: "Archivo", sans-serif;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
+    position: relative;
   }
-  .topo { display: flex; justify-content: space-between; align-items: center; }
-  .marca { font-size: 15px; font-weight: 700; letter-spacing: .3em; text-transform: uppercase; }
-  .status { display: flex; align-items: center; gap: 9px; font-family: Consolas, monospace; font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: #938B7C; }
-  .pulso { width: 6px; height: 6px; border-radius: 50%; background: #E0795B; }
-  .olho { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; font-family: Consolas, monospace; font-size: 11px; letter-spacing: .24em; text-transform: uppercase; color: #938B7C; }
-  .olho::before { content: ""; width: 30px; height: 1px; background: #E0795B; }
-  h1 { font-size: 104px; line-height: .97; font-weight: 400; letter-spacing: -.052em; max-width: 900px; }
-  .ponto { color: #E0795B; }
-  .baixo { border-top: 1px solid #3B352C; padding-top: 22px; }
-  ul { list-style: none; display: flex; gap: 40px; }
-  li { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 500; letter-spacing: -.01em; }
-  .chip { width: 10px; height: 10px; border-radius: 2px; }
-  .tag { margin-left: 6px; font-family: Consolas, monospace; font-size: 10px; letter-spacing: .18em; text-transform: uppercase; color: #938B7C; }
+  .conteudo {
+    text-align: center;
+    z-index: 1;
+  }
+  .marca {
+    font-size: 72px;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    line-height: 1;
+  }
+  .lab {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #8a8780;
+  }
+  .frase {
+    margin-top: 36px;
+    font-size: 16px;
+    font-style: italic;
+    color: #8a8780;
+  }
 </style>
 </head>
 <body>
-  <div class="topo">
-    <span class="marca">Charles Ideias Lab</span>
-    <span class="status"><span class="pulso"></span>Laboratório ativo</span>
-  </div>
-  <div>
-    <p class="olho">Imagem · Som · Código</p>
-    <h1>Tudo o que faço<br>mora aqui<span class="ponto">.</span></h1>
-  </div>
-  <div class="baixo">
-    <ul>
-      <li><span class="chip" style="background:#E0795B"></span>Cicatriz Sonora <span class="tag">Filme</span></li>
-      <li><span class="chip" style="background:#A79F91"></span>Contato <span class="tag">Falar</span></li>
-    </ul>
+  <div class="conteudo">
+    <div class="marca">Charles Ideias</div>
+    <div class="lab">Lab</div>
+    <div class="frase">Filmes, música e histórias que precisam existir.</div>
   </div>
 </body>
 </html>
